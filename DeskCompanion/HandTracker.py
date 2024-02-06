@@ -8,7 +8,7 @@ class TrackerHand:
 
     def __init__(self, show: bool = False, rightHanded: bool = True):
 
-        self.cap = cv2.VideoCapture(6)
+        self.cap = cv2.VideoCapture(0)
         if not self.cap.isOpened():
             print("Cannot open webcam")
             exit()
